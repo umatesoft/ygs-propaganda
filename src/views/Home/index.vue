@@ -114,7 +114,7 @@
     <div class="combo">
       <p style="color:#3B426B;font-size:32px;text-align:center;">套餐功能对比</p>
       <p style="color:#3B426B;font-size:18px;text-align:center;font-weight:400;margin:10px 0 30px 0">
-        更多需求详询：400-2366-8866</p>
+        更多需求详询：400-609-8866</p>
       <ul class="combo_title">
         <li style="display:flex;background: #E5E6EE;height:46px;align-items:center;color:#3B426B;font-weight:500;">
           <span style="display:flex;width:32%;padding-left:20px">功能</span>
@@ -138,13 +138,13 @@
               alt="" width="15px"> -->
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
-            ¥2999/年
+            联系我们
             <!-- <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
               alt="" width="15px"> -->
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
-            ¥4999/年
+            联系我们
             <!-- <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
               alt="" width="15px"> -->
@@ -561,7 +561,7 @@ export default {
       window.location = 'http://home.timemate.top/'
     },
     mess(){
-      this.$alert('请拨打电话 400-2366-8866', '联系方式', {
+      this.$alert('请拨打电话 400-609-8866', '联系方式', {
         confirmButtonText: '确定'
       })
     }
