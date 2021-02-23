@@ -10,47 +10,44 @@
         </span>
       </div>
       <div class="head_right" style="display:flex">
-        <a href="http://123.57.52.118:8017/#/login">
-          <button
-            style="width:100px;height:42px;display:flex;justify-content:center;align-items:center;background:#037BFF;color:#fff;border-radius:5px;font-sie:22px"
+        <!-- <a href="http://123.57.52.118:8017/#/login"> -->
+          <button @click="getToMenu" style="width:100px;height:42px;display:flex;justify-content:center;align-items:center;background:#037BFF;color:#fff;border-radius:5px;font-sie:22px"
           >
             登 陆
           </button>
-        </a>
+        <!-- </a> -->
 
         <!--        跳到管理段得注册页面现在没有。没有写-->
-        <a href="#">
-          <button
-            style="width:100px;height:42px;display:flex;justify-content:center;align-items:center;border:1px solid #037BFF;border-radius:5px;margin-left:20px;color:#037BFF;font-sie:22px"
+        <!-- <a href="#"> -->
+          <button @click="getToMenu" style="width:100px;height:42px;display:flex;justify-content:center;align-items:center;border:1px solid #037BFF;border-radius:5px;margin-left:20px;color:#037BFF;font-sie:22px"
           >
             注 册
           </button>
-        </a>
+        <!-- </a> -->
       </div>
     </div>
     <!-- banner -->
     <div class="banner" style="height:452px;position:relative;">
       <div style="position:absolute;bottom:145px;left:15%;">
-        <p style="font-size:36px;font-weight:bold;color:#fff;margin-bottom:10px">项目工时与成本管理Saas平台</p>
+        <p style="font-size:36px;font-weight:bold;color:#fff;margin-bottom:10px">项目工时与成本管理系统</p>
         <p style="width:432px;font-size:18px;line-height:32px;color:#fff;font-weight:400;margin-bottom:40px">
           {{ banner_dec }}
         </p>
         <p style="display:flex">
-          <a href="http://123.57.52.118:8017/#/login">
-            <button
-              style="color:#3B426B;font-size:16px;background:#fff;border-radius:3px;width:142px;height:36px;display:flex;justify-content:center;align-items:center;margin-right:15px"
+          <!-- <a href="http://123.57.52.118:8017/#/login"> -->
+            <button @click="getToMenu" style="color:#3B426B;font-size:16px;background:#fff;border-radius:3px;width:142px;height:36px;display:flex;justify-content:center;align-items:center;margin-right:15px"
             >
               立即体验
-              <i class="el-icon-right"></i>
+              <!-- <i class="el-icon-right"></i> -->
             </button>
-          </a>
+          <!-- </a> -->
 
           <a href="#price">
             <button
               style="color:#fff;font-size:16px;background:#037BFF;border-radius:3px;width:142px;height:36px;display:flex;justify-content:center;align-items:center;"
             >
               报价
-              <i class="el-icon-right"></i>
+              <!-- <i class="el-icon-right"></i> -->
             </button>
           </a>
         </p>
@@ -63,7 +60,7 @@
         <li v-for="(item,index) in list" :key="index">
           <img :src="item.icon" alt/>
           <span class="list_title">{{ item.name }}</span>
-          <span class="list_dec">{{ item.dec }}</span>
+          <span class="list_dec" v-html="item.dec" style="display:inline-block;height:50px;">{{ item.dec }}</span>
         </li>
       </ul>
     </div>
@@ -88,8 +85,7 @@
         </li>
       </ul>
       <p style="display:flex;justify-content:center;">
-        <button
-          style="width:160px;height:48px;display:flex;justify-content:center;align-items:center;color:#fff;background:#037BFF;font-size:18px;border-radius:3px;"
+        <button @click="getToMenu" style="width:160px;height:48px;display:flex;justify-content:center;align-items:center;color:#fff;background:#037BFF;font-size:18px;border-radius:3px;"
         >立即注册
         </button>
       </p>
@@ -115,202 +111,6 @@
         </dt>
       </dl>
     </div>
-    <div id="price" class="price">
-      <p style="font-size:32px;color:#3B426B;text-align:center;">产品定价，可根据团队规模及业务需求，选择套餐</p>
-      <ul class="price_ul">
-        <li class="price_ul_li">
-          <p class="price_ul-li_p">
-            <span style="font-size:18px;">免费版</span>
-            <span style="font-size:24px;">免费试用30天</span>
-          </p>
-          <div class="price_content">
-            <div class="price_content_top" style="border-bottom: 1px dashed #7D83A9;padding-bottom:100px;">
-              <p class="price_content_p">
-                <span style="color:#7D83A9;font-weight:400">
-                  员工人数
-                </span>
-                <span style="color:#3B426B;font-weight:500;vertical-align: baseline">
-                  &lt;50人
-                </span>
-              </p>
-              <p class="price_content_p">
-                <span style="color:#7D83A9;font-weight:400">
-                  附件
-                </span>
-                <span style="color:#3B426B;font-weight:500;">
-                  1GB
-                </span>
-              </p>
-              <p class="price_content_p">
-                <span style="color:#7D83A9;font-weight:400">
-                  内部系统对接
-                </span>
-                <span style="color:#3B426B;font-weight:500;">
-                  不支持
-                </span>
-              </p>
-              <p class="price_content_p">
-                <span style="color:#7D83A9;font-weight:400">
-                  定制化
-                </span>
-                <span style="color:#3B426B;font-weight:500;">
-                  不支持
-                </span>
-              </p>
-            </div>
-            <div class="price_content_bottom">
-              <button @click="mess">
-                立即购买
-              </button>
-            </div>
-          </div>
-        </li>
-        <li class="price_ul_li"
-            >
-          <p class="price_ul-li_p"
-             >
-<!--           颜色更加鲜艳 style="background-image:url('https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/17%20-%20OTHER%20COLORS@2x%20(1).png')"-->
-            <span style="font-size:18px;">标准版</span>
-            <span style="font-size:24px;"><b style="font-size:12px;">¥</b>1999/年</span>
-          </p>
-          <div class="price_content">
-            <div class="price_content_top" style="border-bottom: 1px dashed #7D83A9;padding-bottom:100px;">
-              <p class="price_content_p">
-                <span style="color:#7D83A9;font-weight:400">
-                  员工人数
-                </span>
-                <span style="color:#3B426B;font-weight:500;">
-                  &lt;200人
-                </span>
-              </p>
-              <p class="price_content_p">
-                <span style="color:#7D83A9;font-weight:400">
-                  附件
-                </span>
-                <span style="color:#3B426B;font-weight:500;">
-                  50GB
-                </span>
-              </p>
-              <p class="price_content_p">
-                <span style="color:#7D83A9;font-weight:400">
-                  内部系统对接
-                </span>
-                <span style="color:#3B426B;font-weight:500;">
-                  不支持
-                </span>
-              </p>
-              <p class="price_content_p">
-                <span style="color:#7D83A9;font-weight:400">
-                  定制化
-                </span>
-                <span style="color:#3B426B;font-weight:500;">
-                  不支持
-                </span>
-              </p>
-            </div>
-            <div class="price_content_bottom">
-              <button @click="mess">
-                立即购买
-              </button>
-            </div>
-          </div>
-        </li>
-        <li class="price_ul_li">
-          <p class="price_ul-li_p">
-            <span style="font-size:18px;">高级版</span>
-            <span style="font-size:24px;"><b style="font-size:12px;">¥</b>2999/年</span>
-          </p>
-          <div class="price_content">
-            <div class="price_content_top" style="border-bottom: 1px dashed #7D83A9;padding-bottom:100px;">
-              <p class="price_content_p">
-                <span style="color:#7D83A9;font-weight:400">
-                  员工人数
-                </span>
-                <span style="color:#3B426B;font-weight:500;">
-                  &lt;500人
-                </span>
-              </p>
-              <p class="price_content_p">
-                <span style="color:#7D83A9;font-weight:400">
-                  附件
-                </span>
-                <span style="color:#3B426B;font-weight:500;">
-                  200GB
-                </span>
-              </p>
-              <p class="price_content_p">
-                <span style="color:#7D83A9;font-weight:400">
-                  内部系统对接
-                </span>
-                <span style="color:#3B426B;font-weight:500;">
-                  详询客服
-                </span>
-              </p>
-              <p class="price_content_p">
-                <span style="color:#7D83A9;font-weight:400">
-                  定制化
-                </span>
-                <span style="color:#3B426B;font-weight:500;">
-                  不支持
-                </span>
-              </p>
-            </div>
-            <div class="price_content_bottom">
-              <button @click="mess">
-                立即购买
-              </button>
-            </div>
-          </div>
-        </li>
-        <li class="price_ul_li">
-          <p class="price_ul-li_p">
-            <span style="font-size:18px;">尊享定制版</span>
-            <span style="font-size:24px;"><b style="font-size:12px;">¥</b>4999/年</span>
-          </p>
-          <div class="price_content">
-            <div class="price_content_top" style="border-bottom: 1px dashed #7D83A9;padding-bottom:100px;">
-              <p class="price_content_p">
-                <span style="color:#7D83A9;font-weight:400">
-                  员工人数
-                </span>
-                <span style="color:#3B426B;font-weight:500;">
-                  &gt;500人
-                </span>
-              </p>
-              <p class="price_content_p">
-                <span style="color:#7D83A9;font-weight:400">
-                  附件
-                </span>
-                <span style="color:#3B426B;font-weight:500;">
-                  不限
-                </span>
-              </p>
-              <p class="price_content_p">
-                <span style="color:#7D83A9;font-weight:400">
-                  内部系统对接
-                </span>
-                <span style="color:#3B426B;font-weight:500;">
-                  详询客服
-                </span>
-              </p>
-              <p class="price_content_p">
-                <span style="color:#7D83A9;font-weight:400">
-                  定制化
-                </span>
-                <span style="color:#3B426B;font-weight:500;">
-                  详询客服
-                </span>
-              </p>
-            </div>
-            <div class="price_content_bottom">
-              <button @click="mess">
-                立即购买
-              </button>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
     <div class="combo">
       <p style="color:#3B426B;font-size:32px;text-align:center;">套餐功能对比</p>
       <p style="color:#3B426B;font-size:18px;text-align:center;font-weight:400;margin:10px 0 30px 0">
@@ -324,7 +124,126 @@
           <span style="display:flex;width:17%;justify-content:center;">尊享定制版</span>
         </li>
         <li style="display:flex;height:66px;align-items:center;color:#7D83A9;font-size:18px;font-weight:400">
+          <span style="display:flex;width:32%;padding-left:20px">价格</span>
+          <span style="display:flex;width:17%;justify-content:center;">
+            免费试用
+            <!-- <img
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
+              alt="" width="15px"> -->
+          </span>
+          <span style="display:flex;width:17%;justify-content:center;">
+            ¥1999/年
+            <!-- <img
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
+              alt="" width="15px"> -->
+          </span>
+          <span style="display:flex;width:17%;justify-content:center;">
+            ¥2999/年
+            <!-- <img
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
+              alt="" width="15px"> -->
+          </span>
+          <span style="display:flex;width:17%;justify-content:center;">
+            ¥4999/年
+            <!-- <img
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
+              alt="" width="15px"> -->
+          </span>
+        </li>
+        <li style="display:flex;background: #E5E6EE;height:46px;align-items:center;color:#3B426B;font-weight:500;">
+          <span style="display:flex;width:32%;padding-left:20px">附件</span>
+        <span style="display:flex;width:17%;justify-content:center;">
+          5G
+          </span>
+        <span style="display:flex;width:17%;justify-content:center;">
+          30G
+          </span>
+        <span style="display:flex;width:17%;justify-content:center;">
+          60G
+          </span>
+        <span style="display:flex;width:17%;justify-content:center;">
+          100G
+          </span>
+        </li>
+        <li style="display:flex;height:66px;align-items:center;color:#7D83A9;font-size:18px;font-weight:400">
+          <span style="display:flex;width:32%;padding-left:20px">员工人数</span>
+          <span style="display:flex;width:17%;justify-content:center;">
+            &lt;10人
+          </span>
+          <span style="display:flex;width:17%;justify-content:center;">
+            &lt;200人
+          </span>
+          <span style="display:flex;width:17%;justify-content:center;">
+            &lt;500人
+          </span>
+          <span style="display:flex;width:17%;justify-content:center;">
+            &gt;500人
+          </span>
+        </li>
+        <li style="display:flex;background: #E5E6EE;height:46px;align-items:center;color:#3B426B;font-weight:500;">
+          <span style="display:flex;width:32%;padding-left:20px">可创建项目</span>
+        <span style="display:flex;width:17%;justify-content:center;">
+          5/个
+          </span>
+        <span style="display:flex;width:17%;justify-content:center;">
+          15/个
+          </span>
+        <span style="display:flex;width:17%;justify-content:center;">
+          50/个
+          </span>
+        <span style="display:flex;width:17%;justify-content:center;">
+          不限量
+          </span>
+        </li>
+        <li style="display:flex;height:66px;align-items:center;color:#7D83A9;font-size:18px;font-weight:400">
           <span style="display:flex;width:32%;padding-left:20px">成员组织架构管理</span>
+          <span style="display:flex;width:17%;justify-content:center;">
+            <img
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
+              alt="" width="15px">
+          </span>
+          <span style="display:flex;width:17%;justify-content:center;">
+            <img
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
+              alt="" width="15px">
+          </span>
+          <span style="display:flex;width:17%;justify-content:center;">
+            <img
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
+              alt="" width="15px">
+          </span>
+          <span style="display:flex;width:17%;justify-content:center;">
+            <img
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
+              alt="" width="15px">
+          </span>
+        </li>
+        
+        <li style="display:flex;background: #E5E6EE;height:46px;align-items:center;color:#3B426B;font-weight:500;">
+          <span style="display:flex;width:32%;padding-left:20px">数据分析屏幕展示</span>
+          <span style="display:flex;width:17%;justify-content:center;">
+            <img
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
+              alt="" width="15px">
+          </span>
+          <span style="display:flex;width:17%;justify-content:center;">
+            <img
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
+              alt="" width="15px">
+          </span>
+          <span style="display:flex;width:17%;justify-content:center;">
+            <img
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
+              alt="" width="15px">
+          </span>
+          <span style="display:flex;width:17%;justify-content:center;">
+            <img
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
+              alt="" width="15px">
+          </span>
+        </li>
+        <li style="display:flex;height:66px;align-items:center;color:#7D83A9;font-size:18px;font-weight:400">
+          <span style="display:flex;width:32%;padding-left:20px">多级别权限管理</span>
           <span style="display:flex;width:17%;justify-content:center;">
             <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
@@ -352,42 +271,27 @@
 <!--            <img-->
 <!--              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"-->
 <!--              alt="" width="15px">-->
-          每张发票0.05元
-          </span>
-        <span style="display:flex;width:17%;justify-content:center;">
-          每张发票0.05元
-          </span>
-        <span style="display:flex;width:17%;justify-content:center;">
-          每张发票0.05元
-          </span>
-        <span style="display:flex;width:17%;justify-content:center;">
-          每张发票0.05元
-          </span>
-        </li>
-        <li style="display:flex;height:66px;align-items:center;color:#7D83A9;font-size:18px;font-weight:400">
-          <span style="display:flex;width:32%;padding-left:20px">多级别权限管理</span>
-          <span style="display:flex;width:17%;justify-content:center;">
-            <img
+          <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
               alt="" width="15px">
           </span>
-          <span style="display:flex;width:17%;justify-content:center;">
-            <img
+        <span style="display:flex;width:17%;justify-content:center;">
+          <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
               alt="" width="15px">
           </span>
-          <span style="display:flex;width:17%;justify-content:center;">
-            <img
+        <span style="display:flex;width:17%;justify-content:center;">
+          <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
               alt="" width="15px">
           </span>
-          <span style="display:flex;width:17%;justify-content:center;">
-            <img
+        <span style="display:flex;width:17%;justify-content:center;">
+          <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
               alt="" width="15px">
           </span>
         </li>
-        <li style="display:flex;background: #E5E6EE;height:46px;align-items:center;color:#3B426B;font-weight:500;">
+        <!-- <li style="display:flex;height:66px;align-items:center;color:#7D83A9;font-weight:500;">
           <span style="display:flex;width:32%;padding-left:20px">附件大小限制</span>
           <span style="display:flex;width:17%;justify-content:center;">
             <img
@@ -409,53 +313,7 @@
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
               alt="" width="15px">
           </span>
-        </li>
-        <li style="display:flex;height:66px;align-items:center;color:#7D83A9;font-size:18px;font-weight:400;">
-          <span style="display:flex;width:32%;padding-left:20px">开放RESTFUR API</span>
-          <span style="display:flex;width:17%;justify-content:center;justify-content:center;">
-            <img
-              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
-              alt="" width="15px">
-          </span>
-          <span style="display:flex;width:17%;justify-content:center;">
-            <img
-              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
-              alt="" width="15px">
-          </span>
-          <span style="display:flex;width:17%;justify-content:center;">
-            <img
-              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
-              alt="" width="15px">
-          </span>
-          <span style="display:flex;width:17%;justify-content:center;">
-            <img
-              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
-              alt="" width="15px">
-          </span>
-        </li>
-        <li style="display:flex;background: #E5E6EE;height:46px;align-items:center;color:#3B426B;font-weight:500;">
-          <span style="display:flex;width:32%;padding-left:20px">专属技术支持</span>
-          <span style="display:flex;width:17%;justify-content:center;">
-            <img
-              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
-              alt="" width="15px">
-          </span>
-          <span style="display:flex;width:17%;justify-content:center;">
-            <img
-              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
-              alt="" width="15px">
-          </span>
-          <span style="display:flex;width:17%;justify-content:center;">
-            <img
-              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
-              alt="" width="15px">
-          </span>
-          <span style="display:flex;width:17%;justify-content:center;">
-            <img
-              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
-              alt="" width="15px">
-          </span>
-        </li>
+        </li> -->
         <li style="display:flex;height:66px;align-items:center;color:#7D83A9;font-size:18px;font-weight:400;">
           <span style="display:flex;width:32%;padding-left:20px">项目成本分析</span>
           <span style="display:flex;width:17%;justify-content:center;">
@@ -479,11 +337,17 @@
               alt="" width="15px">
           </span>
         </li>
-        <li style="display:flex;background: #E5E6EE;height:46px;align-items:center;color:#3B426B;font-weight:500;">
-          <span style="display:flex;width:32%;padding-left:20px">数据分析屏幕展示</span>
+        
+        <li style="display:flex;height:46px;background: #E5E6EE;align-items:center;color:#3B426B;font-size:18px;font-weight:400;">
+          <span style="display:flex;width:32%;padding-left:20px">开放RESTFUR API</span>
+          <span style="display:flex;width:17%;justify-content:center;justify-content:center;">
+            <img
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
+              alt="" width="15px">
+          </span>
           <span style="display:flex;width:17%;justify-content:center;">
             <img
-              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
               alt="" width="15px">
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
@@ -494,6 +358,47 @@
           <span style="display:flex;width:17%;justify-content:center;">
             <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
+              alt="" width="15px">
+          </span>
+        </li>
+        <li style="display:flex;height:66px;align-items:center;color:#7D83A9;font-weight:400;">
+          <span style="display:flex;width:32%;padding-left:20px">专属技术支持</span>
+          <span style="display:flex;width:17%;justify-content:center;">
+            <img
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
+              alt="" width="15px">
+          </span>
+          <span style="display:flex;width:17%;justify-content:center;">
+            <img
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
+              alt="" width="15px">
+          </span>
+          <span style="display:flex;width:17%;justify-content:center;">
+            <img
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
+              alt="" width="15px">
+          </span>
+          <span style="display:flex;width:17%;justify-content:center;">
+            <img
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
+              alt="" width="15px">
+          </span>
+        </li>
+        <li style="display:flex;height:46px;background: #E5E6EE;align-items:center;color:#3B426B;font-size:18px;font-weight:400">
+          <span style="display:flex;width:32%;padding-left:20px">本地化部署</span>
+          <span style="display:flex;width:17%;justify-content:center;">
+            <img
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
+              alt="" width="15px">
+          </span>
+          <span style="display:flex;width:17%;justify-content:center;">
+            <img
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
+              alt="" width="15px">
+          </span>
+          <span style="display:flex;width:17%;justify-content:center;">
+            <img
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
               alt="" width="15px">
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
@@ -508,8 +413,7 @@
       <p
         style="bottom:15px;left:15%;color:#fff;font-size:20px;margin-right:10px;width:815px"
       >{{ botton_detail }}</p>
-      <button
-        style="background:#fff;color:#037BFF;font-size:18px;width:160px;height:48px;right:15%;display:flex;justify-content:center;align-items:center;border-radius:5px;"
+      <button @click="getToMenu" style="background:#fff;color:#037BFF;font-size:18px;width:160px;height:48px;right:15%;display:flex;justify-content:center;align-items:center;border-radius:5px;"
       >立即注册
       </button>
     </div>
@@ -533,32 +437,32 @@ export default {
           icon:
             "https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/ic1.png",
           name: "工时填报",
-          dec: "快速完成项目工时管理"
+          dec: "多端快速完成项目工时填报<br>填报方式灵活可按天、周、月   "
         },
         {
           icon:
             "https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/ic2.png",
           name: "费用报销",
-          dec: "报销一站式高效反馈"
+          dec: "项目报销一站式高效反馈<br>对接企业财务系统、项目核算一键完成"
         },
         {
           icon:
             "https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/ic3.png",
-          name: "极速反馈",
-          dec: "满足企业多样化需求"
+          name: "极速审批",
+          dec: "短信、微信审批指示随时提醒"
         },
         {
           icon:
             "https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/ic4.png",
-          name: "企业SaaS",
-          dec: "全流程跟踪保障安心上线"
+          name: "定制化开发",
+          dec: "根据企业需求定制化开发"
         }
       ],
       list_title: "减少管理时间和成本，随时随地跟踪工作进度",
       dl_title: "如何管理项目以保证成本呢？",
       dl_dec:
-        "在您管理项目、团队、项目工期时，可能每天都会遇到管理混乱的问题。云工时提供的在线管理项目工时和项目报销的解决方案是使用便签和电子表格跟踪项目和人工成本的可靠替代方案。减少项目管理混乱的情况，并为您提供所需的实时数据你，以使您有信心将”时间“装化为利润",
-      login_head: "可靠的员工时间跟踪系统对您的项目计划决策充满信心。",
+        "在您管理项目、团队、项目工期、项目费用报销时，可能每天都会遇到管理混乱，项目成本核算不准确的问题。云工时提供的在线管理项目工时和项目报销的解决方案是使用云工时管理系统跟踪项目和人工成本的可靠替代方案。减少项目管理混乱的情况，并为您提供所需的实时数据，以使您有信心将“时间”转化为利润。",
+      login_head: "可靠的项目成本管理系统对您的项目计划决策充满信心。",
       login_list: [
         {
           img: "https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/nn1.png",
@@ -583,7 +487,7 @@ export default {
       ],
       detail_title: "尽情的体验云工时带来的便利吧",
       detail:
-        "不再浪费您的时间手动统计员工项目工时并将其输入excel中。<br>员工可以自动填报项目工时和报销费用，平台自动化计算，<br>根据统计更合理的安排项目时间和费用报告。<br>项目工时成本管理无缝衔接，提高工作的效率。",
+        "不再浪费您的时间手动统计员工项目成本并将其输入excel中。<br>员工可以自动填报项目工时和报销费用，平台自动化计算，<br>根据统计更合理的安排项目时间和费用报告。<br>项目工时成本管理无缝衔接，提高工作的效率。",
       detail_list: [
         {
           cls: "el-icon-success",
@@ -647,12 +551,15 @@ export default {
           name: "访问排行"
         }
       ],
-      banner_dec: "为工时管理、工时填报、费用报销提供一站式服务平台，最大化提高企业的工作效率"
+      banner_dec: "是一款可以进行项目工时管理、项目成本管理的服务型系统云工时系统从项目人力成本和项目费用支出角度精准管理项目成本"
     };
   },
   created() {
   },
   methods: {
+    getToMenu() {
+      window.location = 'http://home.timemate.top/'
+    },
     mess(){
       this.$alert('请拨打电话 400-2366-8866', '联系方式', {
         confirmButtonText: '确定'
@@ -702,6 +609,7 @@ export default {
     align-items: center;
 
     li {
+      flex:1;
       display: flex;
       flex-direction: column;
       justify-content: center;
