@@ -422,8 +422,11 @@
 <!--&lt;!&ndash;        <li v-for="(item,index) in foot_list" :key="index">{{ item.name }}</li>&ndash;&gt;-->
 <!--      </ul>-->
       <p
-        style="color: #e8e5df;font-size:12px"
+        style="color: #e8e5df;font-size:12px;padding-top:8px"
       >ICP备案号：京ICP备18011395号-2｜© Copyright2019-2021 timemate.top</p>
+      <p
+        style="color: #e8e5df;font-size:12px;border:none;"
+      >地址：北京市朝阳区常通路3号院2号楼</p>
     </div>
   </div>
 </template>
@@ -781,11 +784,11 @@ export default {
 }
 
 .foot {
-  height: 40px;
+  height: 50px;
   background: #037BFF;
   //background:transparent;
   padding: 0 15%;
-  line-height: 40px;
+  // line-height: 40px;
   text-align: center;
   p{
     border-top: #036BFF solid .5px;
