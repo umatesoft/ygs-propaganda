@@ -11,14 +11,19 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      // '/api': { //将www.exaple.com印射为/apis
-        // target: 'http://192.168.0.127:8080/', // 接口域名
-        // changeOrigin: false, //是否跨域
-        // pathRewrite: {
-        //     '^/api': '/',
-        // }
-
-      // }
+      '/api': {  //使用"/api"来代替"http://f.apiplus.c"
+        // target: 'http://192.168.3.23:9009/umatesoft/', //源地址
+        // target: 'http://39.107.58.157:9009/umatesoft/',
+        // target: 'http://192.168.3.17:9009/umatesoft/', //源地址
+        // target: 'http://192.168.3.56:9009/umatesoft/', //源地址
+        target: 'http://123.57.52.118:9009/umatesoft/',
+        // target: 'http://192.168.3.39:9009/umatesoft/',
+        // target: 'http://127.0.0.1:9009/umatesoft/', //源地址
+        changeOrigin: true, //改变源
+        pathRewrite: {
+          '^/api': '' //路径重写
+        }
+      }
     },
 
     // Various Dev Server settings

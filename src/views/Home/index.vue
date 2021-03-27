@@ -11,9 +11,13 @@
       </div>
       <div class="head_right" style="display:flex">
         <!-- <a href="http://123.57.52.118:8017/#/login"> -->
+        <span style="color:#0066CC;height:42px;display:flex;justify-content:center;align-items:center;font-sie:22px;margin-right:20px;">
+          <img src="../../assets/tel.png" alt="">
+          咨询热线：400-609-8866
+        </span>
           <button @click="getToMenu" style="width:100px;height:42px;display:flex;justify-content:center;align-items:center;background:#037BFF;color:#fff;border-radius:5px;font-sie:22px"
           >
-            登 陆
+            登 录
           </button>
         <!-- </a> -->
 
@@ -27,31 +31,40 @@
       </div>
     </div>
     <!-- banner -->
-    <div class="banner" style="height:452px;position:relative;">
-      <div style="position:absolute;bottom:145px;left:15%;">
+    <div class="banner" style="position:relative;">
+      <img src="../../assets/bg.png" alt="" width="100%">
+      <div style="position:absolute;top:0%;left:7%;height:100%;display:flex;flex-direction:column;justify-content:center;">
         <p style="font-size:36px;font-weight:bold;color:#fff;margin-bottom:10px">项目工时与成本管理系统</p>
-        <p style="width:432px;font-size:18px;line-height:32px;color:#fff;font-weight:400;margin-bottom:40px">
+        <p style="width:632px;font-size:18px;line-height:32px;color:#fff;font-weight:400;margin-bottom:40px">
           {{ banner_dec }}
         </p>
-        <p style="display:flex">
+      </div>
+      <!-- <p style="display:flex;position:absolute;right:15%;bottom:130px;width:150px;">
+        
+      </p> -->
+      <div style="display:flex;flex-direction:column;position:absolute;right:8%;top:0px;align-items:center;height:100%;justify-content:center;">
+        <img src="../../assets/erweima.jpeg" alt="" width="150px">
+        <p style="display:flex;margin-top:10px;">
           <!-- <a href="http://123.57.52.118:8017/#/login"> -->
-            <button @click="getToMenu" style="color:#3B426B;font-size:16px;background:#fff;border-radius:3px;width:142px;height:36px;display:flex;justify-content:center;align-items:center;margin-right:15px"
+          
+            <button @click="getToMenu" style="color:#3B426B;font-size:16px;background:#fff;border-radius:3px;width:142px;height:36px;display:flex;justify-content:center;align-items:center;margin-right:45px"
             >
               立即体验
               <!-- <i class="el-icon-right"></i> -->
             </button>
           <!-- </a> -->
 
-          <a href="#price">
-            <button
+          <!-- <a href="consult"> -->
+            <button @click="getRouter"
               style="color:#fff;font-size:16px;background:#037BFF;border-radius:3px;width:142px;height:36px;display:flex;justify-content:center;align-items:center;"
             >
-              报价
+              企业咨询
               <!-- <i class="el-icon-right"></i> -->
             </button>
-          </a>
+          <!-- </a> -->
         </p>
       </div>
+      
     </div>
     <!-- 工时填报 -->
     <div class="list">
@@ -112,7 +125,7 @@
       </dl>
     </div>
     <div class="combo">
-      <p style="color:#3B426B;font-size:32px;text-align:center;">套餐功能对比</p>
+      <p style="color:#3B426B;font-size:32px;text-align:center;">功能比对</p>
       <p style="color:#3B426B;font-size:18px;text-align:center;font-weight:400;margin:10px 0 30px 0">
         更多需求详询：400-609-8866</p>
       <ul class="combo_title">
@@ -132,7 +145,7 @@
               alt="" width="15px"> -->
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
-            ¥1999/年
+            联系我们
             <!-- <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
               alt="" width="15px"> -->
@@ -421,12 +434,18 @@
 <!--      <ul class="foot_ul">-->
 <!--&lt;!&ndash;        <li v-for="(item,index) in foot_list" :key="index">{{ item.name }}</li>&ndash;&gt;-->
 <!--      </ul>-->
-      <p
+<p
         style="color: #e8e5df;font-size:12px;padding-top:8px"
+      >北京众立信科技有限公司</p>
+      <p
+        style="color: #e8e5df;font-size:12px;border:none;"
       >ICP备案号：京ICP备18011395号-2｜© Copyright2019-2021 timemate.top</p>
       <p
         style="color: #e8e5df;font-size:12px;border:none;"
-      >地址：北京市朝阳区常通路3号院2号楼</p>
+      >地址：北京市朝阳区常通路3号院2号楼16层1单元19007</p>
+      <p
+        style="color: #e8e5df;font-size:12px;border:none;padding-bottom:8px;"
+      >联系电话：400-609-8866</p>
     </div>
   </div>
 </template>
@@ -554,7 +573,7 @@ export default {
           name: "访问排行"
         }
       ],
-      banner_dec: "是一款可以进行项目工时管理、项目成本管理的服务型系统云工时系统从项目人力成本和项目费用支出角度精准管理项目成本"
+      banner_dec: "云工时管理系统隶属于北京众立信科技有限公司，是一款专门用于项目工时管理、项目成本管理的服务型系统，云工时可以智能的替代人工管理，真正意义上实现由系统替代人工管理的目标，能够最大程度的帮助企业低成本实现数字化管理的愿景，此外我们系统也充分考虑了企业数据的安全性，敏感信息脱敏处理以及本地化部署的需求，为企业打造最安全的系统。"
     };
   },
   created() {
@@ -562,6 +581,9 @@ export default {
   methods: {
     getToMenu() {
       window.location = 'http://home.timemate.top/'
+    },
+    getRouter() {
+      this.$router.push('/consult')
     },
     mess(){
       this.$alert('请拨打电话 400-609-8866', '联系方式', {
@@ -784,7 +806,7 @@ export default {
 }
 
 .foot {
-  height: 50px;
+  height: 100px;
   background: #037BFF;
   //background:transparent;
   padding: 0 15%;

@@ -11,6 +11,11 @@ export default new Router({
       path: '/',
       name: '首页',
       component: resolve => require(['@/views/Home/index'], resolve)
+    },
+    {
+      path: '/consult',
+      name: '咨询',
+      component: resolve => require(['@/views/consult/index'], resolve)
     }
   ]
 })
