@@ -11,7 +11,7 @@
       </div>
       <div class="head_right" style="display:flex">
         <!-- <a href="http://123.57.52.118:8017/#/login"> -->
-        <span style="color:#0066CC;height:42px;display:flex;justify-content:center;align-items:center;font-sie:22px;margin-right:20px;">
+        <span style="color:#0066CC;height:42px;display:flex;justify-content:center;align-items:center;font-sie:22px;margin-right:20px;width:250px;">
           <img src="../../assets/tel.png" alt="">
           咨询热线：400-609-8866
         </span>
@@ -32,39 +32,39 @@
     </div>
     <!-- banner -->
     <div class="banner" style="position:relative;">
-      <img src="../../assets/bg.png" alt="" width="100%">
-      <div style="position:absolute;top:0%;left:7%;height:100%;display:flex;flex-direction:column;justify-content:center;">
-        <p style="font-size:36px;font-weight:bold;color:#fff;margin-bottom:10px">项目工时与成本管理系统</p>
-        <p style="width:632px;font-size:18px;line-height:32px;color:#fff;font-weight:400;margin-bottom:40px">
+      <img src="../../assets/com.png" alt="" width="100%">
+      <div style="over-flow:hidden;position:absolute;top:0%;margin-right:520px;left:15%;height:100%;min-height:100%;display:flex;flex-direction:column;justify-content:center;">
+        <p style="font-size:36px;font-weight:bold;color:#3b426b;margin-bottom:10px;">项目工时与成本管理系统</p>
+        <p style="width:50%;font-size:18px;line-height:35px;color:#7d83a9;margin-bottom:40px;">
           {{ banner_dec }}
         </p>
-      </div>
-      <!-- <p style="display:flex;position:absolute;right:15%;bottom:130px;width:150px;">
-        
-      </p> -->
-      <div style="display:flex;flex-direction:column;position:absolute;right:8%;top:0px;align-items:center;height:100%;justify-content:center;">
-        <img src="../../assets/erweima.jpeg" alt="" width="150px">
-        <p style="display:flex;margin-top:10px;">
+        <p style="display:flex;">
           <!-- <a href="http://123.57.52.118:8017/#/login"> -->
-          
-            <button @click="getToMenu" style="color:#3B426B;font-size:16px;background:#fff;border-radius:3px;width:142px;height:36px;display:flex;justify-content:center;align-items:center;margin-right:45px"
-            >
-              立即体验
-              <!-- <i class="el-icon-right"></i> -->
-            </button>
+
+          <button @click="getToMenu" style="color:#3B426B;box-shadow: 0px 7px 0px #bed3f2;border:1px solid #d6d8e4;font-size:16px;background:#fff;border-radius:5px;width:142px;height:36px;display:flex;justify-content:center;align-items:center;margin-right:45px"
+          >
+            立即体验
+            <i class="el-icon-right" style="font-size:16px;margin-left:5px;margin-top: 2px;"></i>
+          </button>
           <!-- </a> -->
 
           <!-- <a href="consult"> -->
-            <button @click="getRouter"
-              style="color:#fff;font-size:16px;background:#037BFF;border-radius:3px;width:142px;height:36px;display:flex;justify-content:center;align-items:center;"
-            >
-              企业咨询
-              <!-- <i class="el-icon-right"></i> -->
-            </button>
+          <button @click="getRouter"
+                  style="color:#fff;font-size:16px;box-shadow: 0px 7px 0px #3c6dcc;background:#037BFF;border-radius:3px;width:142px;height:36px;display:flex;justify-content:center;align-items:center;"
+          >
+            企业咨询
+            <i class="el-icon-right" style="font-size:16px;margin-left:5px;margin-top: 2px;"></i>
+          </button>
           <!-- </a> -->
         </p>
       </div>
-      
+      <!-- <p style="display:flex;position:absolute;right:15%;bottom:130px;width:150px;">
+
+      </p> -->
+      <div style="position:fixed;right:0px;top:60%;right:15px;">
+        <img src="../../assets/erweima.jpeg" alt="" width="150px">
+      </div>
+
     </div>
     <!-- 工时填报 -->
     <div class="list">
@@ -145,13 +145,13 @@
               alt="" width="15px"> -->
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
-            联系我们
+            <button style="color:#7D83A9;font-size:18px;font-weight:400;">¥6800/年 购买</button>
             <!-- <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
               alt="" width="15px"> -->
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
-            联系我们
+            <button style="color:#7D83A9;font-size:18px;font-weight:400;">¥12800/年 购买</button>
             <!-- <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
               alt="" width="15px"> -->
@@ -184,10 +184,10 @@
             &lt;10人
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
-            &lt;200人
+            &lt;100人
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
-            &lt;500人
+            &lt;300人
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
             &gt;500人
@@ -199,10 +199,10 @@
           5/个
           </span>
         <span style="display:flex;width:17%;justify-content:center;">
-          15/个
+          不限量
           </span>
         <span style="display:flex;width:17%;justify-content:center;">
-          50/个
+          不限量
           </span>
         <span style="display:flex;width:17%;justify-content:center;">
           不限量
@@ -231,7 +231,7 @@
               alt="" width="15px">
           </span>
         </li>
-        
+
         <li style="display:flex;background: #E5E6EE;height:46px;align-items:center;color:#3B426B;font-weight:500;">
           <span style="display:flex;width:32%;padding-left:20px">数据分析屏幕展示</span>
           <span style="display:flex;width:17%;justify-content:center;">
@@ -350,7 +350,7 @@
               alt="" width="15px">
           </span>
         </li>
-        
+
         <li style="display:flex;height:46px;background: #E5E6EE;align-items:center;color:#3B426B;font-size:18px;font-weight:400;">
           <span style="display:flex;width:32%;padding-left:20px">开放RESTFUR API</span>
           <span style="display:flex;width:17%;justify-content:center;justify-content:center;">
@@ -400,24 +400,28 @@
         <li style="display:flex;height:46px;background: #E5E6EE;align-items:center;color:#3B426B;font-size:18px;font-weight:400">
           <span style="display:flex;width:32%;padding-left:20px">本地化部署</span>
           <span style="display:flex;width:17%;justify-content:center;">
-            <img
+            联系我们
+            <!-- <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
-              alt="" width="15px">
+              alt="" width="15px"> -->
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
-            <img
+            联系我们
+            <!-- <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
-              alt="" width="15px">
+              alt="" width="15px"> -->
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
-            <img
+            联系我们
+            <!-- <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
-              alt="" width="15px">
+              alt="" width="15px"> -->
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
-            <img
+            联系我们
+            <!-- <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
-              alt="" width="15px">
+              alt="" width="15px"> -->
           </span>
         </li>
       </ul>

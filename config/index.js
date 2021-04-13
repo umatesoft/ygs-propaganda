@@ -18,7 +18,7 @@ module.exports = {
         // target: 'http://192.168.3.56:9009/umatesoft/', //源地址
         target: 'http://123.57.52.118:9009/umatesoft/',
         // target: 'http://192.168.3.39:9009/umatesoft/',
-        // target: 'http://127.0.0.1:9009/umatesoft/', //源地址
+        // target: 'http://192.168.3.88:9009/umatesoft/', //源地址
         changeOrigin: true, //改变源
         pathRewrite: {
           '^/api': '' //路径重写

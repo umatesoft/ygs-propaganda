@@ -9,4 +9,5 @@ module.exports = merge(devEnv, {
   // BASE_API: '"http://192.168.1.5:8080/"'
   // BASE_API: '"http://101.201.149.136:8080/"' // 开发环境
   BASE_API: '"http://123.57.52.118:9009/"' //佳佳 
+  // BASE_API: '"http://192.168.3.88:9009/"'
 })

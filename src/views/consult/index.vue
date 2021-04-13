@@ -85,7 +85,7 @@
       </el-form>
     </div>
     <p style="text-align:center;color: rgba(0,0,0,0.3);font-size:14px;line-height:20px;padding:30px 0 50px 0;">
-        Copyright © 2019-2021 timemate.top<br>地址：北京市朝阳区常通路3号院2号楼
+        Copyright © 2019-2021 timemate.top<br>地址：北京市朝阳区常通路3号院2号楼16层1单元19007
     </p>
   </div>
 </template>
@@ -153,9 +153,25 @@ export default {
             let params = this.ruleForm
             getAdd(params).then(res => {
                 if(res.data.code == 200) {
-                    this.$message({
-                        type: 'success',
-                        message: res.data.message
+                    // this.$message({
+                    //     type: 'success',
+                    //     message: res.data.message
+                    // });
+                    const h = this.$createElement;
+                    this.$msgbox({
+                      showClose: false,
+                      title: '提示',
+                      type: 'success',
+                      center: true,
+                      message: h('p',{style: 'paddingt:20px;font-size:16px;text-align:left;text-indent:2rem;'},[
+                        h('span',null,'尊敬的'),
+                        h('span',null,this.ruleForm.userName),
+                        h('span',null,'您好，您的需求已提交成功，我们的客服人员会尽快与您取得联系！'),
+                      ]),
+                      confirmButtonText: '确定',
+                      callback: action => {
+                        this.$router.replace('/')
+                      }
                     });
                     this.ruleForm = {
                         userName: "",
@@ -164,6 +180,7 @@ export default {
                         companyName: '',
                         demandDesc: ''
                     }
+                    
                 }else{
                     this.$message({
                         type: 'error',
