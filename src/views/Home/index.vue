@@ -44,7 +44,7 @@
           <button @click="getToMenu" style="color:#3B426B;box-shadow: 0px 7px 0px #bed3f2;border:1px solid #d6d8e4;font-size:16px;background:#fff;border-radius:5px;width:142px;height:36px;display:flex;justify-content:center;align-items:center;margin-right:45px"
           >
             立即体验
-            <i class="el-icon-right" style="font-size:16px;margin-left:5px;margin-top: 2px;"></i>
+            <!-- <i class="el-icon-right" style="font-size:16px;margin-left:5px;margin-top: 2px;"></i> -->
           </button>
           <!-- </a> -->
 
@@ -53,7 +53,7 @@
                   style="color:#fff;font-size:16px;box-shadow: 0px 7px 0px #3c6dcc;background:#037BFF;border-radius:3px;width:142px;height:36px;display:flex;justify-content:center;align-items:center;"
           >
             企业咨询
-            <i class="el-icon-right" style="font-size:16px;margin-left:5px;margin-top: 2px;"></i>
+            <!-- <i class="el-icon-right" style="font-size:16px;margin-left:5px;margin-top: 2px;"></i> -->
           </button>
           <!-- </a> -->
         </p>
@@ -61,7 +61,7 @@
       <!-- <p style="display:flex;position:absolute;right:15%;bottom:130px;width:150px;">
 
       </p> -->
-      <div style="position:fixed;right:0px;top:60%;right:15px;">
+      <div style="position:fixed;right:0px;top:60%;right:15px;z-index:999;">
         <img src="../../assets/erweima.jpeg" alt="" width="150px">
       </div>
 
