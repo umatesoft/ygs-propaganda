@@ -15,6 +15,10 @@
           <img src="../../assets/tel.png" alt="">
           咨询热线：400-609-8866
         </span>
+        <span style="color:#0066CC;height:42px;display:flex;justify-content:center;align-items:center;font-sie:22px;margin-right:20px;">
+         <i class="el-icon-message" style="font-size:35px;margin-right:5px;"></i>
+          咨询邮箱：service@umatesoft.com
+        </span>
           <button @click="getToMenu" style="width:100px;height:42px;display:flex;justify-content:center;align-items:center;background:#037BFF;color:#fff;border-radius:5px;font-sie:22px"
           >
             登 录
