@@ -38,8 +38,8 @@
     <div class="banner" style="position:relative;">
       <img src="../../assets/com.png" alt="" width="100%">
       <div style="over-flow:hidden;position:absolute;top:0%;margin-right:520px;left:15%;height:100%;min-height:100%;display:flex;flex-direction:column;justify-content:center;">
-        <p style="font-size:36px;font-weight:bold;color:#3b426b;margin-bottom:10px;">项目工时与成本管理系统</p>
-        <p style="width:50%;font-size:18px;line-height:35px;color:#7d83a9;margin-bottom:40px;">
+        <p class="title-p">项目工时与成本管理系统</p>
+        <p class="js-p">
           {{ banner_dec }}
         </p>
         <p style="display:flex;">
@@ -621,8 +621,30 @@ export default {
 .banner {
   background: url("https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/top_banner.png");
   background-size: 100% 100%;
-}
 
+}
+.title-p{
+font-size:36px;font-weight:bold;color:#3b426b;margin-bottom:10px;
+  }
+  .js-p{
+width:50%;font-size:18px;line-height:35px;color:#7d83a9;margin-bottom:40px;
+  }
+@media(max-width:1400px){
+  .title-p{
+font-size:2vw;font-weight:bold;color:#3b426b;margin-bottom:10px;
+  }
+  .js-p{
+width:90%;font-size:1vw;line-height:2vw;color:#7d83a9;margin-bottom:2vw;
+  }
+}
+@media(max-width:1750px){
+  .title-p{
+font-size:2vw;font-weight:bold;color:#3b426b;margin-bottom:10px;
+  }
+  .js-p{
+width:75%;font-size:1vw;line-height:2vw;color:#7d83a9;margin-bottom:2.5vw;
+  }
+} 
 .list {
   width: 100%;
   min-width: 1200px;
