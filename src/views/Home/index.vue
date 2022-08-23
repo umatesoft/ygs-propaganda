@@ -149,13 +149,15 @@
               alt="" width="15px"> -->
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
-            <button style="color:#7D83A9;font-size:18px;font-weight:400;">¥6800/年 购买</button>
+            联系我们
+            <!-- <button style="color:#7D83A9;font-size:18px;font-weight:400;">¥6800/年 购买</button> -->
             <!-- <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
               alt="" width="15px"> -->
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
-            <button style="color:#7D83A9;font-size:18px;font-weight:400;">¥12800/年 购买</button>
+            联系我们
+            <!-- <button style="color:#7D83A9;font-size:18px;font-weight:400;">¥12800/年 购买</button> -->
             <!-- <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
               alt="" width="15px"> -->
@@ -289,7 +291,7 @@
 <!--              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"-->
 <!--              alt="" width="15px">-->
           <img
-              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
               alt="" width="15px">
           </span>
         <span style="display:flex;width:17%;justify-content:center;">
@@ -334,13 +336,19 @@
         <li style="display:flex;height:66px;align-items:center;color:#7D83A9;font-size:18px;font-weight:400;">
           <span style="display:flex;width:32%;padding-left:20px">项目成本分析</span>
           <span style="display:flex;width:17%;justify-content:center;">
-            <img
+            <!-- <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
+              alt="" width="15px"> -->
+              <img
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
               alt="" width="15px">
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
-            <img
+            <!-- <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
+              alt="" width="15px"> -->
+              <img
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
               alt="" width="15px">
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
@@ -358,13 +366,19 @@
         <li style="display:flex;height:46px;background: #E5E6EE;align-items:center;color:#3B426B;font-size:18px;font-weight:400;">
           <span style="display:flex;width:32%;padding-left:20px">开放RESTFUR API</span>
           <span style="display:flex;width:17%;justify-content:center;justify-content:center;">
-            <img
+            <!-- <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
+              alt="" width="15px"> -->
+              <img
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
               alt="" width="15px">
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
-            <img
+            <!-- <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
+              alt="" width="15px"> -->
+               <img
+              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
               alt="" width="15px">
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
@@ -381,24 +395,28 @@
         <li style="display:flex;height:66px;align-items:center;color:#7D83A9;font-weight:400;">
           <span style="display:flex;width:32%;padding-left:20px">专属技术支持</span>
           <span style="display:flex;width:17%;justify-content:center;">
-            <img
+            联系我们
+            <!-- <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
-              alt="" width="15px">
+              alt="" width="15px"> -->
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
-            <img
+          联系我们
+            <!-- <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
-              alt="" width="15px">
+              alt="" width="15px"> -->
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
-            <img
+            联系我们
+            <!-- <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
-              alt="" width="15px">
+              alt="" width="15px"> -->
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
-            <img
+            联系我们
+            <!-- <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
-              alt="" width="15px">
+              alt="" width="15px"> -->
           </span>
         </li>
         <li style="display:flex;height:46px;background: #E5E6EE;align-items:center;color:#3B426B;font-size:18px;font-weight:400">
