@@ -65,10 +65,10 @@
       <!-- <p style="display:flex;position:absolute;right:15%;bottom:130px;width:150px;">
 
       </p> -->
-      <div style="position:fixed;right:0px;top:60%;right:15px;z-index:999;">
+      <div class="img_box">
         <img src="../../assets/erweima.jpeg" alt="" width="150px">
+        <img src="../../assets/erweima1.jpeg" alt="" width="150px">
       </div>
-
     </div>
     <!-- 工时填报 -->
     <div class="list">
@@ -662,7 +662,7 @@ font-size:2vw;font-weight:bold;color:#3b426b;margin-bottom:10px;
   .js-p{
 width:75%;font-size:1vw;line-height:2vw;color:#7d83a9;margin-bottom:2.5vw;
   }
-} 
+}
 .list {
   width: 100%;
   min-width: 1200px;
@@ -706,7 +706,13 @@ width:75%;font-size:1vw;line-height:2vw;color:#7d83a9;margin-bottom:2.5vw;
     }
   }
 }
-
+.img_box{
+  position:fixed;top:45%;right:30px;z-index:999;
+  img{
+    margin-bottom: 20px;
+    display: block;
+  }
+}
 .price {
   width: 100%;
   height: 930px;
