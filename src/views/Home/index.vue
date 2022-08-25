@@ -2,42 +2,59 @@
   <div class="box">
     <!-- 头部 -->
     <div class="head" style="width:100%;height:70px;">
-      <div class="head_left">
+      <div class="head_left" style="width: 160px">
         <span style="color:#037BFF;font-size:24px;font-weight:bold">
-          <img style="width: 20%;"
+          <img style="width: 100%;"
                src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E4%BA%91%E5%B7%A5%E6%97%B6%20LOGO%E6%BA%90%E6%96%87%E4%BB%B6.jpg"
                alt/>
         </span>
       </div>
-      <div class="head_right" style="display:flex">
+      <div class="head_right" style="display:flex;align-items: center">
         <!-- <a href="http://123.57.52.118:8017/#/login"> -->
-        <span style="color:#0066CC;height:42px;display:flex;justify-content:center;align-items:center;font-sie:22px;margin-right:20px;width:250px;">
+        <span
+          style="color:#0066CC;height:42px;display:flex;justify-content:center;align-items:center;font-sie:22px;margin-right:20px;width:250px;">
           <img src="../../assets/tel.png" alt="">
           咨询热线：400-609-8866
         </span>
-        <span style="color:#0066CC;height:42px;display:flex;justify-content:center;align-items:center;font-sie:22px;margin-right:20px;">
+        <span
+          style="color:#0066CC;height:42px;display:flex;justify-content:center;align-items:center;font-sie:22px;margin-right:20px;">
          <i class="el-icon-message" style="font-size:35px;margin-right:5px;"></i>
           咨询邮箱：service@umatesoft.com
         </span>
-          <button @click="getToMenu" style="width:100px;height:42px;display:flex;justify-content:center;align-items:center;background:#037BFF;color:#fff;border-radius:5px;font-sie:22px"
-          >
-            登 录
-          </button>
+        <button @click="getToMenu"
+                style="width:100px;height:42px;display:flex;justify-content:center;align-items:center;background:#037BFF;color:#fff;border-radius:5px;font-sie:22px"
+        >
+          登 录
+        </button>
         <!-- </a> -->
 
         <!--        跳到管理段得注册页面现在没有。没有写-->
         <!-- <a href="#"> -->
-          <button @click="getToMenu" style="width:100px;height:42px;display:flex;justify-content:center;align-items:center;border:1px solid #037BFF;border-radius:5px;margin-left:20px;color:#037BFF;font-sie:22px"
-          >
-            注 册
-          </button>
+        <button @click="getToMenu"
+                style="width:100px;height:42px;display:flex;justify-content:center;align-items:center;border:1px solid #037BFF;border-radius:5px;margin-left:20px;color:#037BFF;font-sie:22px"
+        >
+          注 册
+        </button>
         <!-- </a> -->
+        <el-dropdown>
+  <span class="el-dropdown-link">
+    源码下载<i class="el-icon-arrow-down el-icon--right"></i>
+  </span>
+          <el-dropdown-menu slot="dropdown">
+            <el-dropdown-item><a href="https://gitee.com/zhonglixin/ygs-applet-vue?_from=gitee_search" target="_blank">用户端前端(微信小程序)</a></el-dropdown-item>
+            <el-dropdown-item><a href="https://gitee.com/zhonglixin/ygs-app-vue?_from=gitee_search" target="_blank">用户端前端(APP)</a></el-dropdown-item>
+            <el-dropdown-item><a href="https://gitee.com/zhonglixin/ygs-user-vue-new?_from=gitee_search" target="_blank">用户端前端(PC)</a></el-dropdown-item>
+            <el-dropdown-item><a href="https://gitee.com/zhonglixin/ygs-manager-vue?_from=gitee_search" target="_blank">后台管理前端(pc)</a></el-dropdown-item>
+            <el-dropdown-item><a href="https://gitee.com/zhonglixin/ygs-manager-project?_from=gitee_search" target="_blank">后端源码</a></el-dropdown-item>
+          </el-dropdown-menu>
+        </el-dropdown>
       </div>
     </div>
     <!-- banner -->
     <div class="banner" style="position:relative;">
       <img src="../../assets/com.png" alt="" width="100%">
-      <div style="over-flow:hidden;position:absolute;top:0%;margin-right:520px;left:15%;height:100%;min-height:100%;display:flex;flex-direction:column;justify-content:center;">
+      <div
+        style="over-flow:hidden;position:absolute;top:0%;margin-right:520px;left:15%;height:100%;min-height:100%;display:flex;flex-direction:column;justify-content:center;">
         <p class="title-p">项目工时与成本管理系统</p>
         <p class="js-p">
           {{ banner_dec }}
@@ -45,7 +62,8 @@
         <p style="display:flex;">
           <!-- <a href="http://123.57.52.118:8017/#/login"> -->
 
-          <button @click="getToMenu" style="color:#3B426B;box-shadow: 0px 7px 0px #bed3f2;border:1px solid #d6d8e4;font-size:16px;background:#fff;border-radius:5px;width:142px;height:36px;display:flex;justify-content:center;align-items:center;margin-right:45px"
+          <button @click="getToMenu"
+                  style="color:#3B426B;box-shadow: 0px 7px 0px #bed3f2;border:1px solid #d6d8e4;font-size:16px;background:#fff;border-radius:5px;width:142px;height:36px;display:flex;justify-content:center;align-items:center;margin-right:45px"
           >
             立即体验
             <!-- <i class="el-icon-right" style="font-size:16px;margin-left:5px;margin-top: 2px;"></i> -->
@@ -102,7 +120,8 @@
         </li>
       </ul>
       <p style="display:flex;justify-content:center;">
-        <button @click="getToMenu" style="width:160px;height:48px;display:flex;justify-content:center;align-items:center;color:#fff;background:#037BFF;font-size:18px;border-radius:3px;"
+        <button @click="getToMenu"
+                style="width:160px;height:48px;display:flex;justify-content:center;align-items:center;color:#fff;background:#037BFF;font-size:18px;border-radius:3px;"
         >立即注册
         </button>
       </p>
@@ -171,16 +190,16 @@
         </li>
         <li style="display:flex;background: #E5E6EE;height:46px;align-items:center;color:#3B426B;font-weight:500;">
           <span style="display:flex;width:32%;padding-left:20px">附件</span>
-        <span style="display:flex;width:17%;justify-content:center;">
+          <span style="display:flex;width:17%;justify-content:center;">
           5G
           </span>
-        <span style="display:flex;width:17%;justify-content:center;">
+          <span style="display:flex;width:17%;justify-content:center;">
           30G
           </span>
-        <span style="display:flex;width:17%;justify-content:center;">
+          <span style="display:flex;width:17%;justify-content:center;">
           60G
           </span>
-        <span style="display:flex;width:17%;justify-content:center;">
+          <span style="display:flex;width:17%;justify-content:center;">
           100G
           </span>
         </li>
@@ -201,16 +220,16 @@
         </li>
         <li style="display:flex;background: #E5E6EE;height:46px;align-items:center;color:#3B426B;font-weight:500;">
           <span style="display:flex;width:32%;padding-left:20px">可创建项目</span>
-        <span style="display:flex;width:17%;justify-content:center;">
+          <span style="display:flex;width:17%;justify-content:center;">
           5/个
           </span>
-        <span style="display:flex;width:17%;justify-content:center;">
+          <span style="display:flex;width:17%;justify-content:center;">
           不限量
           </span>
-        <span style="display:flex;width:17%;justify-content:center;">
+          <span style="display:flex;width:17%;justify-content:center;">
           不限量
           </span>
-        <span style="display:flex;width:17%;justify-content:center;">
+          <span style="display:flex;width:17%;justify-content:center;">
           不限量
           </span>
         </li>
@@ -286,28 +305,28 @@
         </li>
         <li style="display:flex;background: #E5E6EE;height:46px;align-items:center;color:#3B426B;font-weight:500;">
           <span style="display:flex;width:32%;padding-left:20px">OCR自动识别</span>
-        <span style="display:flex;width:17%;justify-content:center;">
+          <span style="display:flex;width:17%;justify-content:center;">
 <!--            <img-->
-<!--              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"-->
-<!--              alt="" width="15px">-->
+            <!--              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"-->
+            <!--              alt="" width="15px">-->
           <img
-              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
-              alt="" width="15px">
+            src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
+            alt="" width="15px">
           </span>
-        <span style="display:flex;width:17%;justify-content:center;">
+          <span style="display:flex;width:17%;justify-content:center;">
           <img
-              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
-              alt="" width="15px">
+            src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
+            alt="" width="15px">
           </span>
-        <span style="display:flex;width:17%;justify-content:center;">
+          <span style="display:flex;width:17%;justify-content:center;">
           <img
-              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
-              alt="" width="15px">
+            src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
+            alt="" width="15px">
           </span>
-        <span style="display:flex;width:17%;justify-content:center;">
+          <span style="display:flex;width:17%;justify-content:center;">
           <img
-              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
-              alt="" width="15px">
+            src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
+            alt="" width="15px">
           </span>
         </li>
         <!-- <li style="display:flex;height:66px;align-items:center;color:#7D83A9;font-weight:500;">
@@ -340,16 +359,16 @@
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
               alt="" width="15px"> -->
               <img
-              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
-              alt="" width="15px">
+                src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
+                alt="" width="15px">
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
             <!-- <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
               alt="" width="15px"> -->
               <img
-              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
-              alt="" width="15px">
+                src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
+                alt="" width="15px">
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
             <img
@@ -363,23 +382,24 @@
           </span>
         </li>
 
-        <li style="display:flex;height:46px;background: #E5E6EE;align-items:center;color:#3B426B;font-size:18px;font-weight:400;">
+        <li
+          style="display:flex;height:46px;background: #E5E6EE;align-items:center;color:#3B426B;font-size:18px;font-weight:400;">
           <span style="display:flex;width:32%;padding-left:20px">开放RESTFUR API</span>
           <span style="display:flex;width:17%;justify-content:center;justify-content:center;">
             <!-- <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
               alt="" width="15px"> -->
               <img
-              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
-              alt="" width="15px">
+                src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
+                alt="" width="15px">
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
             <!-- <img
               src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD%2012@2x.png"
               alt="" width="15px"> -->
                <img
-              src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
-              alt="" width="15px">
+                 src="https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E7%BB%84%E5%A4%87%E4%BB%BD@2x.png"
+                 alt="" width="15px">
           </span>
           <span style="display:flex;width:17%;justify-content:center;">
             <img
@@ -419,7 +439,8 @@
               alt="" width="15px"> -->
           </span>
         </li>
-        <li style="display:flex;height:46px;background: #E5E6EE;align-items:center;color:#3B426B;font-size:18px;font-weight:400">
+        <li
+          style="display:flex;height:46px;background: #E5E6EE;align-items:center;color:#3B426B;font-size:18px;font-weight:400">
           <span style="display:flex;width:32%;padding-left:20px">本地化部署</span>
           <span style="display:flex;width:17%;justify-content:center;">
             联系我们
@@ -448,19 +469,20 @@
         </li>
       </ul>
     </div>
-    <div class="bottom"  style=" display:flex;height:220px;justify-content: center;align-items: flex-end;padding: 30px">
+    <div class="bottom" style=" display:flex;height:220px;justify-content: center;align-items: flex-end;padding: 30px">
       <p
         style="bottom:15px;left:15%;color:#fff;font-size:20px;margin-right:10px;width:815px"
       >{{ botton_detail }}</p>
-      <button @click="getToMenu" style="background:#fff;color:#037BFF;font-size:18px;width:160px;height:48px;right:15%;display:flex;justify-content:center;align-items:center;border-radius:5px;"
+      <button @click="getToMenu"
+              style="background:#fff;color:#037BFF;font-size:18px;width:160px;height:48px;right:15%;display:flex;justify-content:center;align-items:center;border-radius:5px;"
       >立即注册
       </button>
     </div>
     <div class="foot">
-<!--      <ul class="foot_ul">-->
-<!--&lt;!&ndash;        <li v-for="(item,index) in foot_list" :key="index">{{ item.name }}</li>&ndash;&gt;-->
-<!--      </ul>-->
-<p
+      <!--      <ul class="foot_ul">-->
+      <!--&lt;!&ndash;        <li v-for="(item,index) in foot_list" :key="index">{{ item.name }}</li>&ndash;&gt;-->
+      <!--      </ul>-->
+      <p
         style="color: #e8e5df;font-size:12px;padding-top:8px"
       >北京众立信科技有限公司</p>
       <p
@@ -478,149 +500,157 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       list: [
         {
           icon:
-            "https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/ic1.png",
-          name: "工时填报",
-          dec: "多端快速完成项目工时填报<br>填报方式灵活可按天、周、月   "
+            'https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/ic1.png',
+          name: '工时填报',
+          dec: '多端快速完成项目工时填报<br>填报方式灵活可按天、周、月   '
         },
         {
           icon:
-            "https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/ic2.png",
-          name: "费用报销",
-          dec: "项目报销一站式高效反馈<br>对接企业财务系统、项目核算一键完成"
+            'https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/ic2.png',
+          name: '费用报销',
+          dec: '项目报销一站式高效反馈<br>对接企业财务系统、项目核算一键完成'
         },
         {
           icon:
-            "https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/ic3.png",
-          name: "极速审批",
-          dec: "短信、微信审批指示随时提醒"
+            'https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/ic3.png',
+          name: '极速审批',
+          dec: '短信、微信审批指示随时提醒'
         },
         {
           icon:
-            "https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/ic4.png",
-          name: "定制化开发",
-          dec: "根据企业需求定制化开发"
+            'https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/ic4.png',
+          name: '定制化开发',
+          dec: '根据企业需求定制化开发'
         }
       ],
-      list_title: "减少管理时间和成本，随时随地跟踪工作进度",
-      dl_title: "如何管理项目以保证成本呢？",
+      list_title: '减少管理时间和成本，随时随地跟踪工作进度',
+      dl_title: '如何管理项目以保证成本呢？',
       dl_dec:
-        "在您管理项目、团队、项目工期、项目费用报销时，可能每天都会遇到管理混乱，项目成本核算不准确的问题。云工时提供的在线管理项目工时和项目报销的解决方案是使用云工时管理系统跟踪项目和人工成本的可靠替代方案。减少项目管理混乱的情况，并为您提供所需的实时数据，以使您有信心将“时间”转化为利润。",
-      login_head: "可靠的项目成本管理系统对您的项目计划决策充满信心。",
+        '在您管理项目、团队、项目工期、项目费用报销时，可能每天都会遇到管理混乱，项目成本核算不准确的问题。云工时提供的在线管理项目工时和项目报销的解决方案是使用云工时管理系统跟踪项目和人工成本的可靠替代方案。减少项目管理混乱的情况，并为您提供所需的实时数据，以使您有信心将“时间”转化为利润。',
+      login_head: '可靠的项目成本管理系统对您的项目计划决策充满信心。',
       login_list: [
         {
-          img: "https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/nn1.png",
-          title: "郑重承诺",
-          dec: "可进行免费试用"
+          img: 'https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/nn1.png',
+          title: '郑重承诺',
+          dec: '可进行免费试用'
         },
         {
-          img: "https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/nn2.png",
-          title: "触手可及的数据",
-          dec: "重新获取对数据的信心"
+          img: 'https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/nn2.png',
+          title: '触手可及的数据',
+          dec: '重新获取对数据的信心'
         },
         {
-          img: "https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/nn3.png",
-          title: "可视化装饰",
-          dec: "提供流畅的用户体验"
+          img: 'https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/nn3.png',
+          title: '可视化装饰',
+          dec: '提供流畅的用户体验'
         },
         {
-          img: "https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/nn4.png",
-          title: "支持定制开发",
-          dec: "持续优化提升平台能力"
+          img: 'https://umatesoft-tuchuang.oss-cn-beijing.aliyuncs.com/nn4.png',
+          title: '支持定制开发',
+          dec: '持续优化提升平台能力'
         }
       ],
-      detail_title: "尽情的体验云工时带来的便利吧",
+      detail_title: '尽情的体验云工时带来的便利吧',
       detail:
-        "不再浪费您的时间手动统计员工项目成本并将其输入excel中。<br>员工可以自动填报项目工时和报销费用，平台自动化计算，<br>根据统计更合理的安排项目时间和费用报告。<br>项目工时成本管理无缝衔接，提高工作的效率。",
+        '不再浪费您的时间手动统计员工项目成本并将其输入excel中。<br>员工可以自动填报项目工时和报销费用，平台自动化计算，<br>根据统计更合理的安排项目时间和费用报告。<br>项目工时成本管理无缝衔接，提高工作的效率。',
       detail_list: [
         {
-          cls: "el-icon-success",
-          detail: "时间表管理"
+          cls: 'el-icon-success',
+          detail: '时间表管理'
         },
         {
-          cls: "el-icon-success",
-          detail: "可定制以适应任何需求"
+          cls: 'el-icon-success',
+          detail: '可定制以适应任何需求'
         },
         {
-          cls: "el-icon-success",
-          detail: "费用管理"
+          cls: 'el-icon-success',
+          detail: '费用管理'
         },
         {
-          cls: "el-icon-success",
-          detail: "移动时间跟踪"
+          cls: 'el-icon-success',
+          detail: '移动时间跟踪'
         },
         // {
         //   cls: "el-icon-success",
         //   detail: "可计费和不可计费时间"
         // },
         {
-          cls: "el-icon-success",
-          detail: "按客户，项目，任务进行时间跟踪"
+          cls: 'el-icon-success',
+          detail: '按客户，项目，任务进行时间跟踪'
         },
         {
-          cls: "el-icon-success",
-          detail: "预定的报告和通知"
+          cls: 'el-icon-success',
+          detail: '预定的报告和通知'
         },
         {
-          cls: "el-icon-success",
-          detail: "报销管理"
+          cls: 'el-icon-success',
+          detail: '报销管理'
         },
         // {
         //   cls: "el-icon-success",
         //   detail: "假期/假期追踪"
         // },
         {
-          cls: "el-icon-success",
-          detail: "项目资源计划与调度"
+          cls: 'el-icon-success',
+          detail: '项目资源计划与调度'
         }
       ],
-      botton_detail:"使用云工时数字化管理平台，将会提高您工作的效率，最大化减少企业的管理成本！",
+      botton_detail: '使用云工时数字化管理平台，将会提高您工作的效率，最大化减少企业的管理成本！',
       foot_list: [
         {
-          name: "网站声明"
+          name: '网站声明'
         },
         {
-          name: "网站管理"
+          name: '网站管理'
         },
         {
-          name: "网站地图"
+          name: '网站地图'
         },
         {
-          name: "联系我们"
+          name: '联系我们'
         },
         {
-          name: "网站值班"
+          name: '网站值班'
         },
         {
-          name: "访问排行"
+          name: '访问排行'
         }
       ],
-      banner_dec: "云工时管理系统隶属于北京众立信科技有限公司，是一款专门用于项目工时管理、项目成本管理的服务型系统，云工时可以智能的替代人工管理，真正意义上实现由系统替代人工管理的目标，能够最大程度的帮助企业低成本实现数字化管理的愿景，此外我们系统也充分考虑了企业数据的安全性，敏感信息脱敏处理以及本地化部署的需求，为企业打造最安全的系统。"
-    };
+      banner_dec: '云工时管理系统隶属于北京众立信科技有限公司，是一款专门用于项目工时管理、项目成本管理的服务型系统，云工时可以智能的替代人工管理，真正意义上实现由系统替代人工管理的目标，能够最大程度的帮助企业低成本实现数字化管理的愿景，此外我们系统也充分考虑了企业数据的安全性，敏感信息脱敏处理以及本地化部署的需求，为企业打造最安全的系统。'
+    }
   },
-  created() {
+  created () {
   },
   methods: {
-    getToMenu() {
+    getToMenu () {
       window.location = 'http://home.timemate.top/'
     },
-    getRouter() {
+    getRouter () {
       this.$router.push('/consult')
     },
-    mess(){
+    mess () {
       this.$alert('请拨打电话 400-609-8866', '联系方式', {
         confirmButtonText: '确定'
       })
     }
   }
-};
+}
 </script>
 
 <style scoped lang="scss">
+.el-dropdown-link {
+  cursor: pointer;
+  color: #409EFF;
+  margin-left: 20px;
+}
+.el-icon-arrow-down {
+  font-size: 12px;
+}
 .box {
   width: 100%;
   min-width: 1200px;
@@ -641,28 +671,54 @@ export default {
   background-size: 100% 100%;
 
 }
-.title-p{
-font-size:36px;font-weight:bold;color:#3b426b;margin-bottom:10px;
+
+.title-p {
+  font-size: 36px;
+  font-weight: bold;
+  color: #3b426b;
+  margin-bottom: 10px;
+}
+
+.js-p {
+  width: 50%;
+  font-size: 18px;
+  line-height: 35px;
+  color: #7d83a9;
+  margin-bottom: 40px;
+}
+
+@media(max-width: 1400px) {
+  .title-p {
+    font-size: 2vw;
+    font-weight: bold;
+    color: #3b426b;
+    margin-bottom: 10px;
   }
-  .js-p{
-width:50%;font-size:18px;line-height:35px;color:#7d83a9;margin-bottom:40px;
-  }
-@media(max-width:1400px){
-  .title-p{
-font-size:2vw;font-weight:bold;color:#3b426b;margin-bottom:10px;
-  }
-  .js-p{
-width:90%;font-size:1vw;line-height:2vw;color:#7d83a9;margin-bottom:2vw;
+  .js-p {
+    width: 90%;
+    font-size: 1vw;
+    line-height: 2vw;
+    color: #7d83a9;
+    margin-bottom: 2vw;
   }
 }
-@media(max-width:1750px){
-  .title-p{
-font-size:2vw;font-weight:bold;color:#3b426b;margin-bottom:10px;
+
+@media(max-width: 1750px) {
+  .title-p {
+    font-size: 2vw;
+    font-weight: bold;
+    color: #3b426b;
+    margin-bottom: 10px;
   }
-  .js-p{
-width:75%;font-size:1vw;line-height:2vw;color:#7d83a9;margin-bottom:2.5vw;
+  .js-p {
+    width: 75%;
+    font-size: 1vw;
+    line-height: 2vw;
+    color: #7d83a9;
+    margin-bottom: 2.5vw;
   }
 }
+
 .list {
   width: 100%;
   min-width: 1200px;
@@ -682,7 +738,7 @@ width:75%;font-size:1vw;line-height:2vw;color:#7d83a9;margin-bottom:2.5vw;
     align-items: center;
 
     li {
-      flex:1;
+      flex: 1;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -706,13 +762,19 @@ width:75%;font-size:1vw;line-height:2vw;color:#7d83a9;margin-bottom:2.5vw;
     }
   }
 }
-.img_box{
-  position:fixed;top:45%;right:30px;z-index:999;
-  img{
+
+.img_box {
+  position: fixed;
+  top: 45%;
+  right: 30px;
+  z-index: 999;
+
+  img {
     margin-bottom: 20px;
     display: block;
   }
 }
+
 .price {
   width: 100%;
   height: 930px;
@@ -866,10 +928,12 @@ width:75%;font-size:1vw;line-height:2vw;color:#7d83a9;margin-bottom:2.5vw;
   padding: 0 15%;
   // line-height: 40px;
   text-align: center;
-  p{
+
+  p {
     border-top: #036BFF solid .5px;
 
   }
+
   .foot_ul {
     display: flex;
     justify-content: space-between;
